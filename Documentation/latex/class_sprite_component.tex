@@ -1,0 +1,114 @@
+\hypertarget{class_sprite_component}{}\doxysection{Sprite\+Component Class Reference}
+\label{class_sprite_component}\index{SpriteComponent@{SpriteComponent}}
+
+
+A \mbox{\hyperlink{class_component}{Component}} for loading Sprites by image.  
+
+
+
+
+{\ttfamily \#include $<$Sprite\+Component.\+hpp$>$}
+
+Inheritance diagram for Sprite\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sprite_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_component_ac8b2d3d04c0c66af2b5ce2565385b58c}\label{class_sprite_component_ac8b2d3d04c0c66af2b5ce2565385b58c}} 
+{\bfseries Sprite\+Component} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_component_a313e0d752e822c0e031387bd1fefd896}{Sprite\+Component}} (std\+::string file\+Path)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_component_add14acc8523a724c112e6c93b750b60e}\label{class_sprite_component_add14acc8523a724c112e6c93b750b60e}} 
+{\bfseries $\sim$\+Sprite\+Component} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a9e970695147e36e769ecbaae990fc441}{Update}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj, SDL\+\_\+\+Event e) override
+\begin{DoxyCompactList}\small\item\em Update the sprite\textquotesingle{}s position based on the \mbox{\hyperlink{class_game_object}{Game\+Object}}\textquotesingle{}s fields. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}{Render}} (SDL\+\_\+\+Renderer $\ast$ren) override
+\begin{DoxyCompactList}\small\item\em Render the sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+{\bfseries Component} ()
+\begin{DoxyCompactList}\small\item\em Construct an empty \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ab8378fa275af98e568a7e91d33d867af}\label{class_component_ab8378fa275af98e568a7e91d33d867af}} 
+{\bfseries $\sim$\+Component} ()
+\begin{DoxyCompactList}\small\item\em Destroy this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aee50e71c3b2d02fcbf50d7d8d9b6925c}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Render this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ac2bdc43e661868c95bb26f50c51c45e7}{Update}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj, SDL\+\_\+\+Event e)
+\begin{DoxyCompactList}\small\item\em Update this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_component}{Component}} for loading Sprites by image. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_component_a313e0d752e822c0e031387bd1fefd896}\label{class_sprite_component_a313e0d752e822c0e031387bd1fefd896}} 
+\index{SpriteComponent@{SpriteComponent}!SpriteComponent@{SpriteComponent}}
+\index{SpriteComponent@{SpriteComponent}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{SpriteComponent()}{SpriteComponent()}}
+{\footnotesize\ttfamily Sprite\+Component\+::\+Sprite\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & file representing the image \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}\label{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}} 
+\index{SpriteComponent@{SpriteComponent}!Render@{Render}}
+\index{Render@{Render}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Render the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & the SDL renderer to use \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aee50e71c3b2d02fcbf50d7d8d9b6925c}{Component}}.
+
+\mbox{\Hypertarget{class_sprite_component_a9e970695147e36e769ecbaae990fc441}\label{class_sprite_component_a9e970695147e36e769ecbaae990fc441}} 
+\index{SpriteComponent@{SpriteComponent}!Update@{Update}}
+\index{Update@{Update}!SpriteComponent@{SpriteComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Sprite\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{obj,  }\item[{SDL\+\_\+\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the sprite\textquotesingle{}s position based on the \mbox{\hyperlink{class_game_object}{Game\+Object}}\textquotesingle{}s fields. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The \mbox{\hyperlink{class_game_object}{Game\+Object}} we\textquotesingle{}re in \\
+\hline
+{\em e} & The most recent SDL Event \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ac2bdc43e661868c95bb26f50c51c45e7}{Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Documents/\+Git\+Hub/finalproject-\/zach-\/samuel-\/scott/\+Engine/include/Sprite\+Component.\+hpp\end{DoxyCompactItemize}

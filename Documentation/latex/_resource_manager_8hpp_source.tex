@@ -1,0 +1,56 @@
+\hypertarget{_resource_manager_8hpp_source}{}\doxysection{Resource\+Manager.\+hpp}
+\label{_resource_manager_8hpp_source}\index{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/ResourceManager.hpp@{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/ResourceManager.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESOURCE\_MANAGER\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESOURCE\_MANAGER\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_resource_manager}{ResourceManager}}\ \{}
+\DoxyCodeLine{00017\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ Private\ constructor\ enforces\ singleton\ property}}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Avoid\ copy\ constructor}}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}(\mbox{\hyperlink{class_resource_manager}{ResourceManager}}\ \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Don't\ allow\ assignment}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ operator=(\mbox{\hyperlink{class_resource_manager}{ResourceManager}}\ \textcolor{keyword}{const}\&);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Destructor}}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_resource_manager}{\string~ResourceManager}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Resources}}
+\DoxyCodeLine{00032\ \ \ \ \ std::unordered\_map<std::string,\ SDL\_Texture*>\ spriteSheets;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}\ \&\mbox{\hyperlink{class_resource_manager_acb3f8ecc7b3de8c1c7ac956ce5114d47}{GetInstance}}()\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ C++\ guarantees\ that\ static\ local\ variables\ are\ only\ initialized\ once}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}*\ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_resource_manager}{ResourceManager}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *instance;}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_resource_manager_af06ff71a42cc354386098e610116ef4f}{LoadResource}}(\textcolor{keyword}{const}\ std::string\ image\_filename,\ SDL\_Renderer*\ renderer);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_resource_manager_a46186330327f0876b50341082ea5433f}{GetResource}}(std::string\ key);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_resource_manager_a19f196ba87bf74201b9e3f496edc78cd}{StartUp}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}{ShutDown}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_resource_manager_aa9dc748f715a91a839f388320efe18ac}{UnloadResource}}(std::string\ image\_filename);}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

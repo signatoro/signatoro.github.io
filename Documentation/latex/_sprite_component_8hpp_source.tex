@@ -1,0 +1,36 @@
+\hypertarget{_sprite_component_8hpp_source}{}\doxysection{Sprite\+Component.\+hpp}
+\label{_sprite_component_8hpp_source}\index{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/SpriteComponent.hpp@{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/SpriteComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPRITECOMPONENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPRITECOMPONENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Component.hpp"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sprite_component}{SpriteComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_sprite_component_ac8b2d3d04c0c66af2b5ce2565385b58c}{SpriteComponent}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_sprite_component_a313e0d752e822c0e031387bd1fefd896}{SpriteComponent}}(std::string\ filePath);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_sprite_component_add14acc8523a724c112e6c93b750b60e}{\string~SpriteComponent}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a9e970695147e36e769ecbaae990fc441}{Update}}(\mbox{\hyperlink{class_game_object}{GameObject}}\&\ obj,\ SDL\_Event\ e)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sprite_component_a843ce3d3a2f37cce8ecc8418969b3607}{Render}}(SDL\_Renderer*\ ren)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ std::string\ \ \ \ \ mFilePath;\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ SDL\_Rect\ \ \ \ \ \ \ \ mSrc;\ }
+\DoxyCodeLine{00051\ \ \ \ \ SDL\_Rect\ \ \ \ \ \ \ \ mDest;\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ \ \ \ \ \ \ \ \ \ \ mRot;\ }
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

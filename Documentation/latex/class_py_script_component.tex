@@ -1,0 +1,84 @@
+\hypertarget{class_py_script_component}{}\doxysection{Py\+Script\+Component Class Reference}
+\label{class_py_script_component}\index{PyScriptComponent@{PyScriptComponent}}
+
+
+A Pybind-\/specific class for Script\+Components.  
+
+
+
+
+{\ttfamily \#include $<$Py\+Script\+Component.\+hpp$>$}
+
+Inheritance diagram for Py\+Script\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_py_script_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_py_script_component_aea3f0ddd19fc936a26f6d7ef1de10548}{run\+Script}} () override
+\begin{DoxyCompactList}\small\item\em Run script to override from \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_py_script_component_a918a8a3ffb5ee72ead98eb693c343620}\label{class_py_script_component_a918a8a3ffb5ee72ead98eb693c343620}} 
+{\bfseries Script\+Component} ()
+\begin{DoxyCompactList}\small\item\em Pybind-\/specific class to allow override from Python. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_script_component}{Script\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_script_component_a918a8a3ffb5ee72ead98eb693c343620}\label{class_script_component_a918a8a3ffb5ee72ead98eb693c343620}} 
+{\bfseries Script\+Component} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_component_a6c266c364bf21d0dddb6d7639500a077}\label{class_script_component_a6c266c364bf21d0dddb6d7639500a077}} 
+{\bfseries $\sim$\+Script\+Component} ()
+\begin{DoxyCompactList}\small\item\em Destroys a \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_script_component_aaee6fc072f003194287cd72fce3dccef}{Update}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj, SDL\+\_\+\+Event e)
+\begin{DoxyCompactList}\small\item\em Refreshes the \mbox{\hyperlink{class_game_object}{Game\+Object}} and calls Run\+Script. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_script_component_a7ed83a8d9313956e57d32f17e31a824b}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_script_component_ac5660861b88b2ab103f043622acf64f0}{run\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Runs this \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_component_adf9043686322d3d659625365b32b82d8}\label{class_script_component_adf9043686322d3d659625365b32b82d8}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries Get\+Game\+Object} ()
+\begin{DoxyCompactList}\small\item\em Gets the current game\+Object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_component_ae341f3fb310178d0c97f99f6b5d2cd71}\label{class_script_component_ae341f3fb310178d0c97f99f6b5d2cd71}} 
+void {\bfseries Set\+Game\+Object} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&game\+Object)
+\begin{DoxyCompactList}\small\item\em Sets the game\+Object of this class (should not be used) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+{\bfseries Component} ()
+\begin{DoxyCompactList}\small\item\em Construct an empty \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ab8378fa275af98e568a7e91d33d867af}\label{class_component_ab8378fa275af98e568a7e91d33d867af}} 
+{\bfseries $\sim$\+Component} ()
+\begin{DoxyCompactList}\small\item\em Destroy this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a78c8f31f3d9a8af5bc02275cb677cf4b}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)=0
+\begin{DoxyCompactList}\small\item\em Render this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ae555243a7697369b250c8f0769b05e74}{Update}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj, SDL\+\_\+\+Event e)=0
+\begin{DoxyCompactList}\small\item\em Update this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Pybind-\/specific class for Script\+Components. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_py_script_component_aea3f0ddd19fc936a26f6d7ef1de10548}\label{class_py_script_component_aea3f0ddd19fc936a26f6d7ef1de10548}} 
+\index{PyScriptComponent@{PyScriptComponent}!runScript@{runScript}}
+\index{runScript@{runScript}!PyScriptComponent@{PyScriptComponent}}
+\doxysubsubsection{\texorpdfstring{runScript()}{runScript()}}
+{\footnotesize\ttfamily void Py\+Script\+Component\+::run\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Run script to override from \mbox{\hyperlink{class_script_component}{Script\+Component}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_script_component_ac5660861b88b2ab103f043622acf64f0}{Script\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Documents/\+Git\+Hub/finalproject-\/zach-\/samuel-\/scott/\+Engine/include/Py\+Script\+Component.\+hpp\end{DoxyCompactItemize}

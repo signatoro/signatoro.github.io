@@ -1,0 +1,29 @@
+\hypertarget{_py_script_component_8hpp_source}{}\doxysection{Py\+Script\+Component.\+hpp}
+\label{_py_script_component_8hpp_source}\index{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/PyScriptComponent.hpp@{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/PyScriptComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PYSCRIPTCOMPONENT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PYSCRIPTCOMPONENT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ScriptComponent.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <pybind11/pybind11.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <pybind11/stl.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_py_script_component}{PyScriptComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_script_component}{ScriptComponent}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_script_component_a918a8a3ffb5ee72ead98eb693c343620}{ScriptComponent::ScriptComponent}};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_py_script_component_aea3f0ddd19fc936a26f6d7ef1de10548}{runScript}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ PYBIND11\_OVERLOAD(}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void},\ \textcolor{comment}{/*\ Return\ type\ */}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_script_component}{ScriptComponent}},\ \ \ \ \ \ \textcolor{comment}{/*\ Parent\ class\ */}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_py_script_component_aea3f0ddd19fc936a26f6d7ef1de10548}{runScript}}\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Name\ of\ function\ in\ C++\ (must\ match\ Python\ name)\ */}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

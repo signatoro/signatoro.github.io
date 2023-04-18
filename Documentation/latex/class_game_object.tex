@@ -1,0 +1,253 @@
+\hypertarget{class_game_object}{}\doxysection{Game\+Object Class Reference}
+\label{class_game_object}\index{GameObject@{GameObject}}
+
+
+An object in a game.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_a995f0cdbfcc390c7ad544c855829a361}{Game\+Object}} (\mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} \mbox{\hyperlink{class_game_object_ab031a35471470bcbf14465d265bfdd56}{render\+Component}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object_a5aec9a5954339db145872dec9e83dee9}{Game\+Object}} (float \mbox{\hyperlink{class_game_object_ae4f65052497a751a22e915c779701992}{locationX}}, float \mbox{\hyperlink{class_game_object_a5a034f7350caec2738a9911ad387acec}{locationY}}, float \mbox{\hyperlink{class_game_object_a991ce9335ef2e1cc9dc58aa87f3a0b2f}{scaleX}}, float \mbox{\hyperlink{class_game_object_ac461ab067f5fb37e9e2115dc3572ab29}{scaleY}}, float \mbox{\hyperlink{class_game_object_ac55f6ebdf4cfbab508680ad7290fb26c}{rotation}}, \mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} \mbox{\hyperlink{class_game_object_ab031a35471470bcbf14465d265bfdd56}{render\+Component}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}\label{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}} 
+{\bfseries $\sim$\+Game\+Object} ()
+\begin{DoxyCompactList}\small\item\em Destroy a \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a4018df48b4df0fc4b1db520fcad1ba6c}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Render the game object by rendering its components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a23ff8691e3f48e5aa4dc53052d71dc87}{Update}} (SDL\+\_\+\+Event e)
+\begin{DoxyCompactList}\small\item\em Update the game object by updating its components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_ac815a4545f47afcbdada3800373c03f0}{Add\+Component}} (\mbox{\hyperlink{class_script_component}{Script\+Component}} \&sc)
+\begin{DoxyCompactList}\small\item\em Adds a script component to this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a54f27b720690d96be9f293196102ee84}\label{class_game_object_a54f27b720690d96be9f293196102ee84}} 
+float {\bfseries GetX} ()
+\begin{DoxyCompactList}\small\item\em Gets the x value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_af57b9b44a868ee5c59a801d3054e4877}{SetX}} (float x)
+\begin{DoxyCompactList}\small\item\em Sets the x value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_afb3ee521767363c4323a63d965affcdd}\label{class_game_object_afb3ee521767363c4323a63d965affcdd}} 
+float {\bfseries GetY} ()
+\begin{DoxyCompactList}\small\item\em Gets the y value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a10e5bf15777e087e61040eb0677e85df}{SetY}} (float y)
+\begin{DoxyCompactList}\small\item\em Sets the y value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a39ec7257fe9dc1e375736cf8dcf71c5f}\label{class_game_object_a39ec7257fe9dc1e375736cf8dcf71c5f}} 
+float {\bfseries GetW} ()
+\begin{DoxyCompactList}\small\item\em Gets the width value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a9f50397c35796891e532aa7099695e21}{SetW}} (float w)
+\begin{DoxyCompactList}\small\item\em Sets the width value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_adbbd3e5c06a5ed24217fedbc390dd520}\label{class_game_object_adbbd3e5c06a5ed24217fedbc390dd520}} 
+float {\bfseries GetH} ()
+\begin{DoxyCompactList}\small\item\em Gets the height value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a6d45731d42c2458e2530842bf5df5484}{SetH}} (float h)
+\begin{DoxyCompactList}\small\item\em Sets the height value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a130948bee13353e8ce86508d912d2ff8}\label{class_game_object_a130948bee13353e8ce86508d912d2ff8}} 
+float {\bfseries GetR} ()
+\begin{DoxyCompactList}\small\item\em Gets the rotation value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_ad328a9cb401d6663e4ec6d4db52f5f49}{SetR}} (float r)
+\begin{DoxyCompactList}\small\item\em Sets the rotation value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a3e5f61bc1a1348752b50b9d1bb27a4fc}\label{class_game_object_a3e5f61bc1a1348752b50b9d1bb27a4fc}} 
+int {\bfseries Get\+Id} ()
+\begin{DoxyCompactList}\small\item\em Gets the ID of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_ae4f65052497a751a22e915c779701992}\label{class_game_object_ae4f65052497a751a22e915c779701992}} 
+float {\bfseries locationX}
+\begin{DoxyCompactList}\small\item\em x position in pixels \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a5a034f7350caec2738a9911ad387acec}\label{class_game_object_a5a034f7350caec2738a9911ad387acec}} 
+float {\bfseries locationY}
+\begin{DoxyCompactList}\small\item\em y position in pixels \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a991ce9335ef2e1cc9dc58aa87f3a0b2f}\label{class_game_object_a991ce9335ef2e1cc9dc58aa87f3a0b2f}} 
+float {\bfseries scaleX}
+\begin{DoxyCompactList}\small\item\em Width in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ac461ab067f5fb37e9e2115dc3572ab29}\label{class_game_object_ac461ab067f5fb37e9e2115dc3572ab29}} 
+float {\bfseries scaleY}
+\begin{DoxyCompactList}\small\item\em Height in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ac55f6ebdf4cfbab508680ad7290fb26c}\label{class_game_object_ac55f6ebdf4cfbab508680ad7290fb26c}} 
+float {\bfseries rotation}
+\begin{DoxyCompactList}\small\item\em Rotation in degrees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ab031a35471470bcbf14465d265bfdd56}\label{class_game_object_ab031a35471470bcbf14465d265bfdd56}} 
+\mbox{\hyperlink{class_sprite_component}{Sprite\+Component}} {\bfseries render\+Component}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_component}{Component}} that will be used to render \mbox{\hyperlink{class_game_object}{Game\+Object}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a98291c60da12d9036e1ad24cfebcf6b3}\label{class_game_object_a98291c60da12d9036e1ad24cfebcf6b3}} 
+int {\bfseries id}
+\begin{DoxyCompactList}\small\item\em id representing this object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object in a game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_a995f0cdbfcc390c7ad544c855829a361}\label{class_game_object_a995f0cdbfcc390c7ad544c855829a361}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sprite_component}{Sprite\+Component}}}]{render\+Component }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em render\+Component} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a5aec9a5954339db145872dec9e83dee9}\label{class_game_object_a5aec9a5954339db145872dec9e83dee9}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{float}]{locationX,  }\item[{float}]{locationY,  }\item[{float}]{scaleX,  }\item[{float}]{scaleY,  }\item[{float}]{rotation,  }\item[{\mbox{\hyperlink{class_sprite_component}{Sprite\+Component}}}]{render\+Component }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em locationX} & \\
+\hline
+{\em locationY} & \\
+\hline
+{\em scaleX} & \\
+\hline
+{\em scaleY} & \\
+\hline
+{\em rotation} & \\
+\hline
+{\em render\+Component} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_ac815a4545f47afcbdada3800373c03f0}\label{class_game_object_ac815a4545f47afcbdada3800373c03f0}} 
+\index{GameObject@{GameObject}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_script_component}{Script\+Component}} \&}]{sc }\end{DoxyParamCaption})}
+
+
+
+Adds a script component to this \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sc} & Script component to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a4018df48b4df0fc4b1db520fcad1ba6c}\label{class_game_object_a4018df48b4df0fc4b1db520fcad1ba6c}} 
+\index{GameObject@{GameObject}!Render@{Render}}
+\index{Render@{Render}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})}
+
+
+
+Render the game object by rendering its components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ren} & SDL Renderer to render on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a6d45731d42c2458e2530842bf5df5484}\label{class_game_object_a6d45731d42c2458e2530842bf5df5484}} 
+\index{GameObject@{GameObject}!SetH@{SetH}}
+\index{SetH@{SetH}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetH()}{SetH()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+SetH (\begin{DoxyParamCaption}\item[{float}]{h }\end{DoxyParamCaption})}
+
+
+
+Sets the height value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & new height value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_ad328a9cb401d6663e4ec6d4db52f5f49}\label{class_game_object_ad328a9cb401d6663e4ec6d4db52f5f49}} 
+\index{GameObject@{GameObject}!SetR@{SetR}}
+\index{SetR@{SetR}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetR()}{SetR()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+SetR (\begin{DoxyParamCaption}\item[{float}]{r }\end{DoxyParamCaption})}
+
+
+
+Sets the rotation value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & new rotation value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a9f50397c35796891e532aa7099695e21}\label{class_game_object_a9f50397c35796891e532aa7099695e21}} 
+\index{GameObject@{GameObject}!SetW@{SetW}}
+\index{SetW@{SetW}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetW()}{SetW()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+SetW (\begin{DoxyParamCaption}\item[{float}]{w }\end{DoxyParamCaption})}
+
+
+
+Sets the width value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & new wwidth value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_af57b9b44a868ee5c59a801d3054e4877}\label{class_game_object_af57b9b44a868ee5c59a801d3054e4877}} 
+\index{GameObject@{GameObject}!SetX@{SetX}}
+\index{SetX@{SetX}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+SetX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Sets the x value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & new x value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a10e5bf15777e087e61040eb0677e85df}\label{class_game_object_a10e5bf15777e087e61040eb0677e85df}} 
+\index{GameObject@{GameObject}!SetY@{SetY}}
+\index{SetY@{SetY}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+SetY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets the y value of this \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & new y value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a23ff8691e3f48e5aa4dc53052d71dc87}\label{class_game_object_a23ff8691e3f48e5aa4dc53052d71dc87}} 
+\index{GameObject@{GameObject}!Update@{Update}}
+\index{Update@{Update}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+Update the game object by updating its components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & SDL Event that most recently occured \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Documents/\+Git\+Hub/finalproject-\/zach-\/samuel-\/scott/\+Engine/include/Game\+Object.\+hpp\end{DoxyCompactItemize}

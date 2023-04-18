@@ -1,0 +1,43 @@
+\hypertarget{_script_component_8hpp_source}{}\doxysection{Script\+Component.\+hpp}
+\label{_script_component_8hpp_source}\index{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/ScriptComponent.hpp@{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/ScriptComponent.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SCRIPTCOMPONENT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SCRIPTCOMPONENT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Component.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_script_component}{ScriptComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_script_component_ac6423333f4e4f19b9f699a7fbf7c01d9}{ScriptComponent}}(std::function<\textcolor{keywordtype}{void}(\mbox{\hyperlink{class_game_object}{GameObject}}*)>\ f);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_script_component_a6c266c364bf21d0dddb6d7639500a077}{\string~ScriptComponent}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_script_component_aaee6fc072f003194287cd72fce3dccef}{Update}}(\mbox{\hyperlink{class_game_object}{GameObject}}\&\ obj,\ SDL\_Event\ e);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_script_component_a7ed83a8d9313956e57d32f17e31a824b}{Render}}(SDL\_Renderer*\ ren);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_script_component_ac5660861b88b2ab103f043622acf64f0}{runScript}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object}{GameObject}}*\ \mbox{\hyperlink{class_script_component_adf9043686322d3d659625365b32b82d8}{GetGameObject}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_script_component_ae341f3fb310178d0c97f99f6b5d2cd71}{SetGameObject}}(\mbox{\hyperlink{class_game_object}{GameObject}}\&\ gameObject);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_object}{GameObject}}*\ m\_gameObject;\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::function<void(\mbox{\hyperlink{class_game_object}{GameObject}}*)>\ mFunc;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

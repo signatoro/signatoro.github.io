@@ -1,0 +1,83 @@
+\hypertarget{classasteroids_1_1_game}{}\doxysection{asteroids.\+Game Class Reference}
+\label{classasteroids_1_1_game}\index{asteroids.Game@{asteroids.Game}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a0d47e94ee068f48c6da06a2f804c8bb9}\label{classasteroids_1_1_game_a0d47e94ee068f48c6da06a2f804c8bb9}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classasteroids_1_1_game_ad1db6a22a046ce9baf5a97ed67c2381a}{reset}} (self)
+\item 
+float \mbox{\hyperlink{classasteroids_1_1_game_a0d85120427ea5041baf50715b581031d}{calculate\+\_\+framerate}} (self, datetime current\+\_\+frame\+\_\+time)
+\item 
+def \mbox{\hyperlink{classasteroids_1_1_game_ac43c9d77fe29b00ea43406194135729e}{loop}} (self)
+\item 
+def \mbox{\hyperlink{classasteroids_1_1_game_aa77a5b0d5d0e0c1484d9869fb8629656}{add\+\_\+asteroid}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a4519d1ff9c7548c060633122a2008d91}\label{classasteroids_1_1_game_a4519d1ff9c7548c060633122a2008d91}} 
+{\bfseries frames\+\_\+per\+\_\+second}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a39424ef11ae780de9701a243c77b19e3}\label{classasteroids_1_1_game_a39424ef11ae780de9701a243c77b19e3}} 
+{\bfseries ms\+\_\+per\+\_\+update}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a6abe6f8f4b54a201606b5b6430c589e1}\label{classasteroids_1_1_game_a6abe6f8f4b54a201606b5b6430c589e1}} 
+{\bfseries screen\+\_\+width}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a972e33c2b7d8a1525e0db746209c5144}\label{classasteroids_1_1_game_a972e33c2b7d8a1525e0db746209c5144}} 
+{\bfseries screen\+\_\+height}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a716ff902f8f60f1bbc646dc3a032696e}\label{classasteroids_1_1_game_a716ff902f8f60f1bbc646dc3a032696e}} 
+{\bfseries binding}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a094ca1f06c26c5cc4553266906659877}\label{classasteroids_1_1_game_a094ca1f06c26c5cc4553266906659877}} 
+{\bfseries frame\+\_\+times}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_a5477b8702e1449840762a7435194fffa}\label{classasteroids_1_1_game_a5477b8702e1449840762a7435194fffa}} 
+{\bfseries score}
+\item 
+\mbox{\Hypertarget{classasteroids_1_1_game_af5fc3ae2e08a0a621fbf6a6415ab54d2}\label{classasteroids_1_1_game_af5fc3ae2e08a0a621fbf6a6415ab54d2}} 
+{\bfseries asteroid\+\_\+limit}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classasteroids_1_1_game_aa77a5b0d5d0e0c1484d9869fb8629656}\label{classasteroids_1_1_game_aa77a5b0d5d0e0c1484d9869fb8629656}} 
+\index{asteroids.Game@{asteroids.Game}!add\_asteroid@{add\_asteroid}}
+\index{add\_asteroid@{add\_asteroid}!asteroids.Game@{asteroids.Game}}
+\doxysubsubsection{\texorpdfstring{add\_asteroid()}{add\_asteroid()}}
+{\footnotesize\ttfamily def asteroids.\+Game.\+add\+\_\+asteroid (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}randomly generates and adds an asteroid to the game
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classasteroids_1_1_game_a0d85120427ea5041baf50715b581031d}\label{classasteroids_1_1_game_a0d85120427ea5041baf50715b581031d}} 
+\index{asteroids.Game@{asteroids.Game}!calculate\_framerate@{calculate\_framerate}}
+\index{calculate\_framerate@{calculate\_framerate}!asteroids.Game@{asteroids.Game}}
+\doxysubsubsection{\texorpdfstring{calculate\_framerate()}{calculate\_framerate()}}
+{\footnotesize\ttfamily  float asteroids.\+Game.\+calculate\+\_\+framerate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{datetime}]{current\+\_\+frame\+\_\+time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates current framerate based on the last MAX_SAMPLES frames
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classasteroids_1_1_game_ac43c9d77fe29b00ea43406194135729e}\label{classasteroids_1_1_game_ac43c9d77fe29b00ea43406194135729e}} 
+\index{asteroids.Game@{asteroids.Game}!loop@{loop}}
+\index{loop@{loop}!asteroids.Game@{asteroids.Game}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily def asteroids.\+Game.\+loop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the main game loop
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classasteroids_1_1_game_ad1db6a22a046ce9baf5a97ed67c2381a}\label{classasteroids_1_1_game_ad1db6a22a046ce9baf5a97ed67c2381a}} 
+\index{asteroids.Game@{asteroids.Game}!reset@{reset}}
+\index{reset@{reset}!asteroids.Game@{asteroids.Game}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def asteroids.\+Game.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resets this Game object's fields to start a new game.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Documents/\+Git\+Hub/finalproject-\/zach-\/samuel-\/scott/\+Engine/asteroids.\+py\end{DoxyCompactItemize}

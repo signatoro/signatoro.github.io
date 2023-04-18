@@ -1,0 +1,70 @@
+\hypertarget{_s_d_l_graphics_program_8hpp_source}{}\doxysection{SDLGraphics\+Program.\+hpp}
+\label{_s_d_l_graphics_program_8hpp_source}\index{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/SDLGraphicsProgram.hpp@{C:/Users/zacha/OneDrive/Documents/GitHub/finalproject-\/zach-\/samuel-\/scott/Engine/include/SDLGraphicsProgram.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SDLGRAPHICSPROGRAM}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SDLGRAPHICSPROGRAM}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#if\ defined(LINUX)\ ||\ defined(MINGW)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL2/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ This\ works\ for\ Mac}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#include\ <SDL.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ The\ glad\ library\ helps\ setup\ OpenGL\ extensions.}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <glad/glad.h>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}GameObject.hpp"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}Component.hpp"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}ScriptComponent.hpp"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}SpriteComponent.hpp"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_s_d_l_graphics_program}{SDLGraphicsProgram}}\{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_s_d_l_graphics_program_a976683178e086cd2a1a801fd9c501a7b}{SDLGraphicsProgram}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h);}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_s_d_l_graphics_program_a2504412e7eaa011a1116447eb4d5ec00}{\string~SDLGraphicsProgram}}();}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a6cc65adc2dde4f2346839685c4e43ea9}{initGL}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a56942edfd4c5f45334ba55adb2558d35}{clear}}();}
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a1b2040042b2fc4bda09f365d7885e9a3}{flip}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a299c62853b3f28fc3930880fc4c128ba}{delay}}(\textcolor{keywordtype}{int}\ milliseconds);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_afdca0d5835b36a1b18d7eac69056c6ff}{loop}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{class_s_d_l_graphics_program_a42e9554ec5b497551530bd5a8ca9585f}{getSDLWindow}}();}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a16d2650fd0229073b5de1922fa0156fb}{DrawRectangle}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a9bd5f2aafa3b5f540d2cd6b18812f2fc}{DrawColoredRectangle}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ g,\ \textcolor{keywordtype}{int}\ b);}
+\DoxyCodeLine{00090\ \ \ \ \ std::set<std::string>\ \mbox{\hyperlink{class_s_d_l_graphics_program_a5f8c3a757de44673964ab5db57ffbfd0}{keysPressed}}();}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_abe7d31defd4a6c7a035594ff15e1b887}{Update}}();}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_afb8d3e324d5858174f93dca6f76a1729}{AddGameObject}}(\mbox{\hyperlink{class_game_object}{GameObject}}\&\ g);}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a7554d31c4713445d21be85502475a8ba}{SetBackgroundColor}}(\textcolor{keywordtype}{int}\ r,\ \textcolor{keywordtype}{int}\ g,\ \textcolor{keywordtype}{int}\ b);}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_ae18b42d2e34e2ce4c7fc61efd72ed886}{ClearGameObjects}}();}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a2a2c098ee288330dc66c9dafde24abd0}{RemoveGameObject}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_s_d_l_graphics_program_a4cafb81eff718f1a8600b649596cdfca}{RemoveGameObject}}(\mbox{\hyperlink{class_game_object}{GameObject}}\&\ other);}
+\DoxyCodeLine{00120\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{int}\ screenHeight;\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{int}\ screenWidth;\ }
+\DoxyCodeLine{00123\ \ \ \ \ SDL\_Window*\ gWindow\ ;\ }
+\DoxyCodeLine{00124\ \ \ \ \ SDL\_Renderer*\ gRenderer;\ }
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ std::set<std::string>\ m\_keys;\ }
+\DoxyCodeLine{00127\ \ \ \ \ std::vector<GameObject*>\ m\_gameObjects;\ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{int}\ color[3]\ =\ \{50,\ 50,\ 50\};\ }
+\DoxyCodeLine{00129\ \};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

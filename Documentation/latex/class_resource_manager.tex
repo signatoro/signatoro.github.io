@@ -1,0 +1,129 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+A class for managing resources within a game.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_resource_manager_af06ff71a42cc354386098e610116ef4f}{Load\+Resource}} (const std\+::string image\+\_\+filename, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Loads image from file. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_resource_manager_a46186330327f0876b50341082ea5433f}{Get\+Resource}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Returns resource with associated key. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_resource_manager_a19f196ba87bf74201b9e3f496edc78cd}{Start\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Starts up the resource manager. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}{Shut\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Shuts down the resource manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_resource_manager_aa9dc748f715a91a839f388320efe18ac}{Unload\+Resource}} (std\+::string image\+\_\+filename)
+\begin{DoxyCompactList}\small\item\em Unloads the specified resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{class_resource_manager_acb3f8ecc7b3de8c1c7ac956ce5114d47}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the singleton copy of the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for managing resources within a game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_acb3f8ecc7b3de8c1c7ac956ce5114d47}\label{class_resource_manager_acb3f8ecc7b3de8c1c7ac956ce5114d47}} 
+\index{ResourceManager@{ResourceManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \& Resource\+Manager\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the singleton copy of the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_resource_manager}{Resource\+Manager}}\& The instance of the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a46186330327f0876b50341082ea5433f}\label{class_resource_manager_a46186330327f0876b50341082ea5433f}} 
+\index{ResourceManager@{ResourceManager}!GetResource@{GetResource}}
+\index{GetResource@{GetResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetResource()}{GetResource()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Resource\+Manager\+::\+Get\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})}
+
+
+
+Returns resource with associated key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & string representing an image\+\_\+filename \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture$\ast$ Texture associated with this key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_af06ff71a42cc354386098e610116ef4f}\label{class_resource_manager_af06ff71a42cc354386098e610116ef4f}} 
+\index{ResourceManager@{ResourceManager}!LoadResource@{LoadResource}}
+\index{LoadResource@{LoadResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadResource()}{LoadResource()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Load\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string}]{image\+\_\+filename,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Loads image from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+\_\+filename} & name of the image \\
+\hline
+{\em renderer} & SDL Renderer to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}\label{class_resource_manager_ae5ed3ee26a3de63a04d4bb6542d5bbb0}} 
+\index{ResourceManager@{ResourceManager}!ShutDown@{ShutDown}}
+\index{ShutDown@{ShutDown}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ShutDown()}{ShutDown()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::\+Shut\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shuts down the resource manager. 
+
+\begin{DoxyReturn}{Returns}
+int 0 on success, failure else 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_a19f196ba87bf74201b9e3f496edc78cd}\label{class_resource_manager_a19f196ba87bf74201b9e3f496edc78cd}} 
+\index{ResourceManager@{ResourceManager}!StartUp@{StartUp}}
+\index{StartUp@{StartUp}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{StartUp()}{StartUp()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::\+Start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts up the resource manager. 
+
+\begin{DoxyReturn}{Returns}
+int 0 on success, failure else 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_aa9dc748f715a91a839f388320efe18ac}\label{class_resource_manager_aa9dc748f715a91a839f388320efe18ac}} 
+\index{ResourceManager@{ResourceManager}!UnloadResource@{UnloadResource}}
+\index{UnloadResource@{UnloadResource}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{UnloadResource()}{UnloadResource()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Unload\+Resource (\begin{DoxyParamCaption}\item[{std\+::string}]{image\+\_\+filename }\end{DoxyParamCaption})}
+
+
+
+Unloads the specified resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+\_\+filename} & file to unload \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Documents/\+Git\+Hub/finalproject-\/zach-\/samuel-\/scott/\+Engine/include/Resource\+Manager.\+hpp\end{DoxyCompactItemize}

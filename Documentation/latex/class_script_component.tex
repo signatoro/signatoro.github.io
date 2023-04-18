@@ -1,0 +1,98 @@
+\hypertarget{class_script_component}{}\doxysection{Script\+Component Class Reference}
+\label{class_script_component}\index{ScriptComponent@{ScriptComponent}}
+
+
+A general \mbox{\hyperlink{class_component}{Component}} that can be scripted in Python.  
+
+
+
+
+{\ttfamily \#include $<$Script\+Component.\+hpp$>$}
+
+Inheritance diagram for Script\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_script_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_script_component_ac6423333f4e4f19b9f699a7fbf7c01d9}\label{class_script_component_ac6423333f4e4f19b9f699a7fbf7c01d9}} 
+{\bfseries Script\+Component} (std\+::function$<$ void(\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$)$>$ f)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_component_a6c266c364bf21d0dddb6d7639500a077}\label{class_script_component_a6c266c364bf21d0dddb6d7639500a077}} 
+{\bfseries $\sim$\+Script\+Component} ()
+\begin{DoxyCompactList}\small\item\em Destroys a \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_script_component_aaee6fc072f003194287cd72fce3dccef}{Update}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj, SDL\+\_\+\+Event e)
+\begin{DoxyCompactList}\small\item\em Refreshes the \mbox{\hyperlink{class_game_object}{Game\+Object}} and calls Run\+Script. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_script_component_a7ed83a8d9313956e57d32f17e31a824b}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Renders the \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_component_ac5660861b88b2ab103f043622acf64f0}\label{class_script_component_ac5660861b88b2ab103f043622acf64f0}} 
+virtual void {\bfseries run\+Script} ()
+\begin{DoxyCompactList}\small\item\em Runs this \mbox{\hyperlink{class_script_component}{Script\+Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_component_adf9043686322d3d659625365b32b82d8}\label{class_script_component_adf9043686322d3d659625365b32b82d8}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries Get\+Game\+Object} ()
+\begin{DoxyCompactList}\small\item\em Gets the current game\+Object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_script_component_ae341f3fb310178d0c97f99f6b5d2cd71}\label{class_script_component_ae341f3fb310178d0c97f99f6b5d2cd71}} 
+void {\bfseries Set\+Game\+Object} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&game\+Object)
+\begin{DoxyCompactList}\small\item\em Sets the game\+Object of this class (should not be used) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+{\bfseries Component} ()
+\begin{DoxyCompactList}\small\item\em Construct an empty \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ab8378fa275af98e568a7e91d33d867af}\label{class_component_ab8378fa275af98e568a7e91d33d867af}} 
+{\bfseries $\sim$\+Component} ()
+\begin{DoxyCompactList}\small\item\em Destroy this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_aee50e71c3b2d02fcbf50d7d8d9b6925c}{Render}} (SDL\+\_\+\+Renderer $\ast$ren)
+\begin{DoxyCompactList}\small\item\em Render this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_ac2bdc43e661868c95bb26f50c51c45e7}{Update}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&obj, SDL\+\_\+\+Event e)
+\begin{DoxyCompactList}\small\item\em Update this \mbox{\hyperlink{class_component}{Component}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A general \mbox{\hyperlink{class_component}{Component}} that can be scripted in Python. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_script_component_a7ed83a8d9313956e57d32f17e31a824b}\label{class_script_component_a7ed83a8d9313956e57d32f17e31a824b}} 
+\index{ScriptComponent@{ScriptComponent}!Render@{Render}}
+\index{Render@{Render}!ScriptComponent@{ScriptComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Script\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{ren }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders the \mbox{\hyperlink{class_script_component}{Script\+Component}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component_aee50e71c3b2d02fcbf50d7d8d9b6925c}{Component}}.
+
+\mbox{\Hypertarget{class_script_component_aaee6fc072f003194287cd72fce3dccef}\label{class_script_component_aaee6fc072f003194287cd72fce3dccef}} 
+\index{ScriptComponent@{ScriptComponent}!Update@{Update}}
+\index{Update@{Update}!ScriptComponent@{ScriptComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Script\+Component\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{obj,  }\item[{SDL\+\_\+\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Refreshes the \mbox{\hyperlink{class_game_object}{Game\+Object}} and calls Run\+Script. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The \mbox{\hyperlink{class_game_object}{Game\+Object}} we\textquotesingle{}re in \\
+\hline
+{\em e} & The most recent event \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_ac2bdc43e661868c95bb26f50c51c45e7}{Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Documents/\+Git\+Hub/finalproject-\/zach-\/samuel-\/scott/\+Engine/include/Script\+Component.\+hpp\end{DoxyCompactItemize}

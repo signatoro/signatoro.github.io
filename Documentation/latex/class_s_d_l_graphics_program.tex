@@ -1,0 +1,148 @@
+\hypertarget{class_s_d_l_graphics_program}{}\doxysection{SDLGraphics\+Program Class Reference}
+\label{class_s_d_l_graphics_program}\index{SDLGraphicsProgram@{SDLGraphicsProgram}}
+
+
+A program for handling Game\+Objects and rendering a game.  
+
+
+
+
+{\ttfamily \#include $<$SDLGraphics\+Program.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a976683178e086cd2a1a801fd9c501a7b}\label{class_s_d_l_graphics_program_a976683178e086cd2a1a801fd9c501a7b}} 
+{\bfseries SDLGraphics\+Program} (int w, int h)
+\begin{DoxyCompactList}\small\item\em Initialization function Returns a true or false value based on successful completion of setup. Takes in dimensions of window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a2504412e7eaa011a1116447eb4d5ec00}\label{class_s_d_l_graphics_program_a2504412e7eaa011a1116447eb4d5ec00}} 
+{\bfseries $\sim$\+SDLGraphics\+Program} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{class_s_d_l_graphics_program}{SDLGraphics\+Program}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a6cc65adc2dde4f2346839685c4e43ea9}\label{class_s_d_l_graphics_program_a6cc65adc2dde4f2346839685c4e43ea9}} 
+bool {\bfseries init\+GL} ()
+\begin{DoxyCompactList}\small\item\em Initializes Open\+GL (in this case, returns true) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a56942edfd4c5f45334ba55adb2558d35}\label{class_s_d_l_graphics_program_a56942edfd4c5f45334ba55adb2558d35}} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen, sets render color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a1b2040042b2fc4bda09f365d7885e9a3}\label{class_s_d_l_graphics_program_a1b2040042b2fc4bda09f365d7885e9a3}} 
+void {\bfseries flip} ()
+\begin{DoxyCompactList}\small\item\em Flips to new buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a299c62853b3f28fc3930880fc4c128ba}{delay}} (int milliseconds)
+\begin{DoxyCompactList}\small\item\em Delays render by a number of milliseconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_afdca0d5835b36a1b18d7eac69056c6ff}\label{class_s_d_l_graphics_program_afdca0d5835b36a1b18d7eac69056c6ff}} 
+void {\bfseries loop} ()
+\begin{DoxyCompactList}\small\item\em Loop that runs forever and gets SDL Events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a42e9554ec5b497551530bd5a8ca9585f}\label{class_s_d_l_graphics_program_a42e9554ec5b497551530bd5a8ca9585f}} 
+SDL\+\_\+\+Window $\ast$ {\bfseries get\+SDLWindow} ()
+\begin{DoxyCompactList}\small\item\em Gets the current window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a16d2650fd0229073b5de1922fa0156fb}{Draw\+Rectangle}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em Draws a simple rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a9bd5f2aafa3b5f540d2cd6b18812f2fc}{Draw\+Colored\+Rectangle}} (int x, int y, int w, int h, int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em Draws a colored rectangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a5f8c3a757de44673964ab5db57ffbfd0}\label{class_s_d_l_graphics_program_a5f8c3a757de44673964ab5db57ffbfd0}} 
+std\+::set$<$ std\+::string $>$ {\bfseries keys\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Returns the keys currently being pressed as a set of strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_abe7d31defd4a6c7a035594ff15e1b887}\label{class_s_d_l_graphics_program_abe7d31defd4a6c7a035594ff15e1b887}} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Updates and renders all Game\+Objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_afb8d3e324d5858174f93dca6f76a1729}\label{class_s_d_l_graphics_program_afb8d3e324d5858174f93dca6f76a1729}} 
+void {\bfseries Add\+Game\+Object} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&g)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{class_game_object}{Game\+Object}} to the list of Game\+Objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a7554d31c4713445d21be85502475a8ba}\label{class_s_d_l_graphics_program_a7554d31c4713445d21be85502475a8ba}} 
+void {\bfseries Set\+Background\+Color} (int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em Sets the background color of the renderer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_d_l_graphics_program_ae18b42d2e34e2ce4c7fc61efd72ed886}\label{class_s_d_l_graphics_program_ae18b42d2e34e2ce4c7fc61efd72ed886}} 
+void {\bfseries Clear\+Game\+Objects} ()
+\begin{DoxyCompactList}\small\item\em Clears all existing Game\+Objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a2a2c098ee288330dc66c9dafde24abd0}{Remove\+Game\+Object}} (int id)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{class_game_object}{Game\+Object}} by id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_d_l_graphics_program_a4cafb81eff718f1a8600b649596cdfca}{Remove\+Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} \&other)
+\begin{DoxyCompactList}\small\item\em Removes a \mbox{\hyperlink{class_game_object}{Game\+Object}} by object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A program for handling Game\+Objects and rendering a game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a299c62853b3f28fc3930880fc4c128ba}\label{class_s_d_l_graphics_program_a299c62853b3f28fc3930880fc4c128ba}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!delay@{delay}}
+\index{delay@{delay}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\doxysubsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void SDLGraphics\+Program\+::delay (\begin{DoxyParamCaption}\item[{int}]{milliseconds }\end{DoxyParamCaption})}
+
+
+
+Delays render by a number of milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em milliseconds} & Number of milliseconds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a9bd5f2aafa3b5f540d2cd6b18812f2fc}\label{class_s_d_l_graphics_program_a9bd5f2aafa3b5f540d2cd6b18812f2fc}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!DrawColoredRectangle@{DrawColoredRectangle}}
+\index{DrawColoredRectangle@{DrawColoredRectangle}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\doxysubsubsection{\texorpdfstring{DrawColoredRectangle()}{DrawColoredRectangle()}}
+{\footnotesize\ttfamily void SDLGraphics\+Program\+::\+Draw\+Colored\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Draws a colored rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y,w,h} & bounds of the rectangle \\
+\hline
+{\em r,g,b} & color of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a16d2650fd0229073b5de1922fa0156fb}\label{class_s_d_l_graphics_program_a16d2650fd0229073b5de1922fa0156fb}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!DrawRectangle@{DrawRectangle}}
+\index{DrawRectangle@{DrawRectangle}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\doxysubsubsection{\texorpdfstring{DrawRectangle()}{DrawRectangle()}}
+{\footnotesize\ttfamily void SDLGraphics\+Program\+::\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Draws a simple rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x,y,w,h} & bounds of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a4cafb81eff718f1a8600b649596cdfca}\label{class_s_d_l_graphics_program_a4cafb81eff718f1a8600b649596cdfca}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!RemoveGameObject@{RemoveGameObject}}
+\index{RemoveGameObject@{RemoveGameObject}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\doxysubsubsection{\texorpdfstring{RemoveGameObject()}{RemoveGameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void SDLGraphics\+Program\+::\+Remove\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Removes a \mbox{\hyperlink{class_game_object}{Game\+Object}} by object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & other \mbox{\hyperlink{class_game_object}{Game\+Object}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_d_l_graphics_program_a2a2c098ee288330dc66c9dafde24abd0}\label{class_s_d_l_graphics_program_a2a2c098ee288330dc66c9dafde24abd0}} 
+\index{SDLGraphicsProgram@{SDLGraphicsProgram}!RemoveGameObject@{RemoveGameObject}}
+\index{RemoveGameObject@{RemoveGameObject}!SDLGraphicsProgram@{SDLGraphicsProgram}}
+\doxysubsubsection{\texorpdfstring{RemoveGameObject()}{RemoveGameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void SDLGraphics\+Program\+::\+Remove\+Game\+Object (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Removes a \mbox{\hyperlink{class_game_object}{Game\+Object}} by id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id of the \mbox{\hyperlink{class_game_object}{Game\+Object}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Documents/\+Git\+Hub/finalproject-\/zach-\/samuel-\/scott/\+Engine/include/SDLGraphics\+Program.\+hpp\end{DoxyCompactItemize}
