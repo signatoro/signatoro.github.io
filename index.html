@@ -27,7 +27,7 @@
             background-color: #1b7741; 
             padding: 10px;
             width: 100%;
-            height: 10%;
+            height: 45%;
           }
           .postmortem {
             background-color: #165e34; 
@@ -77,6 +77,21 @@
     <div class="download">
       <h2>Download</h2>
       <p>Download the latest version of the game from <a href="https://github.com/Spring23BuildingGameEngines/finalproject-zach-samuel-scott">here</a>.</p>
+      <p>Instructions to play the game:</p>
+      <ol>
+          <li>Navigate to the "Engine" library in your command line</li>
+          <li>Run "sh mingw64build.sh" on Windows (MinGW), "python linuxbuild.py" on Linux, or "python macbuild.py" on Mac. </li>
+          <li>Run "python3.6 asteroids.py -m ./ourengine.pyd" on Window or "python3.5 asteroids.py -m ./ourengine.so" on Linux or Mac.</li>
+          <li>The game should appear in a new window. Use "WASD" to move, "Space" to shoot, and "R" to restart.</li>
+      </ol>
+      <p>Instructions to edit levels:</p>
+      <ol>
+          <li>Navigate to the "LevelCreationTool" library in your command line.</li>
+          <li>Run "py build.py".</li>
+          <li>Run the lab executable by typing "./lab".</li>
+          <li>The editor should appear in a new window. Click on the screen to add obstacles.</li>
+          <li>Upon closing the tool, the game will update. Repeat the above instructions to play.</li>
+      </ol>
     </div>
     <div class="postmortem">
       <h2>Post Mortem</h2>
