@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Script Engine</title>
+        <style>
+          .trailer {
+            background-color: #20e187; 
+            padding: 10px;
+            width: 100%;
+          }
+          .screenshots {
+            background-color: #2ecc71; 
+            padding: 10px;
+            width: 100%;
+            height: 70%;
+          }
+          .documentation {
+            background-color: #25a85b; 
+            padding: 10px;
+            width: 100%;
+          }
+          .architecture {
+            background-color: #1f8d4d; 
+            padding: 10px;
+            width: 100%;
+          }
+          .download {
+            background-color: #1b7741; 
+            padding: 10px;
+            width: 100%;
+            height: 45%;
+          }
+          .postmortem {
+            background-color: #165e34; 
+            padding: 10px;
+            width: 100%;
+          }
+          .trailer h2,
+          .screenshots h2,
+          .documentation h2,
+          .architecture h2,
+          .download h2,
+          .postmortem h2 {
+            text-align: center;
+          }
+          .trailer iframe,
+          .screenshots img,
+          .documentation p,
+          .architecture img,
+          .download p,
+          .postmortem p {
+            text-align: center;
+          }
+        </style>
+      </head>
+  <body>
+    <div class="trailer">
+      <h2>Video Trailer</h2>
+      <p style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/_6aotazp6Ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </div>
+    <div class="screenshots">
+      <h2>Screenshots</h2>
+      <p style="text-align:center">
+        <img width="600" height="335" src="media/Screenshot1.png" alt="Screenshot 1">
+        <img src="media/Screenshot2.png" alt="Screenshot 2">
+        <img src="media/Screenshot3.png" alt="Screenshot 3">
+        <img src="media/Screenshot4.png" alt="Screenshot 4">
+      </p>
+    </div>
+    <div class="documentation">
+      <h2>Documentation</h2>
+      <p>Check out the <a href="Documentation/html/index.html">documentation</a> for more information about the game.</p>
+    </div>
+    <div class="architecture">
+      <h2>Engine Architecture</h2>
+      <p style="text-align:center"><img src="media/EngineArchitectureDiagram.png" alt="Engine Architecture"></p>
+    </div>
+    <div class="download">
+      <h2>Download</h2>
+      <p>Download the latest version of the game from <a href="https://github.com/Spring23BuildingGameEngines/finalproject-zach-samuel-scott">here</a>.</p>
+      <p>Instructions to play the game:</p>
+      <ol>
+          <li>Navigate to the "Engine" library in your command line</li>
+          <li>Run "sh mingw64build.sh" on Windows (MinGW), "python linuxbuild.py" on Linux, or "python macbuild.py" on Mac. </li>
+          <li>Run "python3.6 asteroids.py -m ./ourengine.pyd" on Window or "python3.5 asteroids.py -m ./ourengine.so" on Linux or Mac.</li>
+          <li>The game should appear in a new window. Use "WASD" to move, "Space" to shoot, and "R" to restart.</li>
+      </ol>
+      <p>Instructions to edit levels:</p>
+      <ol>
+          <li>Navigate to the "LevelCreationTool" library in your command line.</li>
+          <li>Run "py build.py".</li>
+          <li>Run the lab executable by typing "./lab".</li>
+          <li>The editor should appear in a new window. Click on the screen to add obstacles.</li>
+          <li>Upon closing the tool, the game will update. Repeat the above instructions to play.</li>
+      </ol>
+    </div>
+    <div class="postmortem">
+      <h2>Post Mortem</h2>
+      <p>There were a lot of things that we wished we could have added to this engine if we had more time. If we had more time, we would have added more components, such as animation, physics, and lighting. Adding a particle effect system would also be a top priority, as it is a great component for any engine to have. Additionally, we would have liked to add an easy way to display text in the game, which would be great for making games like Undertale or Papers Please.</p>
+      <p> Some other things we would implement are data structures. Right now, we have a few data structures, but for the most part, we just use the given data structures. We would look into and start to implement more custom data structures. This would improve the flow and efficiency of our engine. After that, we would make a few more example games like Mario, Adventure, or Google Dinosaur Run to show the flexibility of our engine.</p>
+    </div>
+  </body>
+</html>
